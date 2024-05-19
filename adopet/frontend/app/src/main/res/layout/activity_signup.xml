@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/maintheme"
+    tools:context=".SignupActivity">
+
+    <ImageView
+        android:layout_width="258dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="35dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/adopet" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:elevation="20dp"
+        app:cardBackgroundColor="@color/firstpagecolor"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/LinearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Sign up"
+                android:textColor="@color/maintheme"
+                android:textStyle="bold"
+                android:textSize="40dp"
+                android:padding="10dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/usernamesignLayout"
+                style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
+                app:helperText="Full Name"
+                app:helperTextTextColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintEnabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/usernamesignEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/login_box"
+                    android:hint="Type your full name"
+                    android:textColorHint="@color/maintheme"
+                    android:inputType="textPersonName"
+                    android:lines="1"
+                    android:maxLength="30"
+                    tools:ignore="TouchTargetSizeCheck">
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/usernameLayout"
+                style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
+                app:helperText="Email"
+                app:helperTextTextColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintEnabled="false"
+                android:layout_marginTop="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/usernameEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/login_box"
+                    android:hint="Type your email"
+                    android:textColorHint="@color/maintheme"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:maxLength="30"
+                    tools:ignore="TouchTargetSizeCheck">
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/numbersignLayout"
+                style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
+                app:helperText="Number"
+                app:helperTextTextColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintEnabled="false"
+                android:layout_marginTop="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/numbersignEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/login_box"
+                    android:hint="Type your number"
+                    android:textColorHint="@color/maintheme"
+                    android:inputType="numberDecimal"
+                    android:lines="1"
+                    android:maxLength="30"
+                    tools:ignore="TouchTargetSizeCheck">
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/psswdLayout"
+                style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
+                app:helperText="Password"
+                app:helperTextTextColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="true"
+                app:counterEnabled="true"
+                app:counterMaxLength="16"
+                app:hintEnabled="false"
+                android:layout_marginTop="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/psswdEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/login_box"
+                    android:hint="Type your password"
+                    android:inputType="textPassword"
+                    android:lines="1"
+                    android:maxLength="16"
+                    android:textColorHint="@color/maintheme"
+                    tools:ignore="TouchTargetSizeCheck">
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/loginBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Sign up"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textColor="@color/firstpagecolor"
+                android:background="@drawable/button_shape" />
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Already have an account?"
+                    android:textStyle="normal"
+                    />
+
+                <TextView
+                    android:id="@+id/mvToLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/login"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

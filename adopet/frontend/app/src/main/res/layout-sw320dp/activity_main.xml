@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/maintheme"
+    tools:context=".MainActivity">
+    <View
+        android:id="@+id/fabcirlce"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/fab_circle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/youngwomen"
+        android:layout_width="325dp"
+        android:layout_height="222dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/youngwomandog"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adopet" />
+
+    <ImageView
+        android:id="@+id/ellipse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="900dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ellipse_auto" />
+
+    <ImageView
+        android:id="@+id/adopet"
+        android:layout_width="258dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="-400dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/adopet" />
+    <ImageView
+        android:id="@+id/next"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/right"
+        android:layout_marginStart="320dp"
+        android:layout_marginTop="330dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ellipse"/>
+
+
+
+    <ImageView
+        android:id="@+id/startexp"
+        android:layout_width="290dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="130dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ellipse"
+        app:srcCompat="@drawable/findyourfavoritepetandadoptit" />
+
+    <ImageView
+        android:id="@+id/connectinghearts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="@+id/ellipse"
+        app:layout_constraintTop_toBottomOf="@+id/startexp"
+        app:srcCompat="@drawable/connectinghearts" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

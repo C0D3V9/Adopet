@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/post_view"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        tools:ignore="MissingConstraints">
+
+
+        <ImageView
+            android:id="@+id/postImage"
+            android:src="@drawable/cat_pic"
+            android:layout_width="150dp"
+            android:layout_height="180dp"
+            android:layout_margin="10dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/petName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Kitty"
+                android:textSize="25dp"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:id="@+id/petLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Ouergla,Chorfa"
+                android:textSize="10dp"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:id="@+id/petAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="6 Years Old"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:gravity="center">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/wallet_ic"/>
+
+
+                <TextView
+                    android:id="@+id/petPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="FREE"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="7dp"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

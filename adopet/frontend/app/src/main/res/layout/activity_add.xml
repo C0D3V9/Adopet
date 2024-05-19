@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/maintheme"
+    tools:context=".add.AddActivity">
+
+    <ImageView
+        android:id="@+id/petPicHolderAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="-50dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:elevation="20dp"
+        android:layout_marginBottom="70dp"
+        app:cardBackgroundColor="@color/firstpagecolor"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/LinearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="650dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Add a pet"
+                android:textAlignment="center"
+                android:textColor="@color/maintheme"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/addnameLayout"
+                    style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    app:helperText="Pet name"
+                    app:helperTextTextColor="@color/black"
+                    app:hintEnabled="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/addnameEditText"
+                        android:layout_width="140dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/login_box"
+                        android:hint="Type pet name"
+                        android:inputType="textPersonName"
+                        android:lines="1"
+                        android:maxLength="15"
+                        android:textColorHint="@color/maintheme"
+                        tools:ignore="TouchTargetSizeCheck">
+
+                    </com.google.android.material.textfield.TextInputEditText>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/addgenderLayout"
+                    style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:helperText="Gender"
+                    app:helperTextTextColor="@color/black"
+                    app:hintEnabled="false">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/addgenderAutoComplete"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:shadowColor="@color/maintheme"
+                        android:hint="Gender"
+                        android:inputType="none"
+                        android:textColorHint="@color/maintheme">
+
+                    </AutoCompleteTextView>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/addageLayout"
+                    style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    app:helperText="Pet age"
+                    app:helperTextTextColor="@color/black"
+                    app:hintEnabled="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/addageEditText"
+                        android:layout_width="140dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/login_box"
+                        android:hint="Type Age"
+                        android:inputType="numberDecimal"
+                        android:lines="1"
+                        android:maxLength="2"
+                        android:textColorHint="@color/maintheme"
+                        tools:ignore="TouchTargetSizeCheck">
+
+                    </com.google.android.material.textfield.TextInputEditText>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/addweightLayout"
+                    style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:helperText="Pet weight"
+                    app:helperTextTextColor="@color/black"
+                    app:hintEnabled="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/addweightEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/login_box"
+                        android:hint="Type weight"
+                        android:inputType="numberDecimal"
+                        android:lines="1"
+                        android:maxLength="15"
+                        android:textColorHint="@color/maintheme"
+                        tools:ignore="TouchTargetSizeCheck">
+
+                    </com.google.android.material.textfield.TextInputEditText>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/adddescLayout"
+                style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:helperText="Description"
+                app:helperTextTextColor="@color/black"
+                app:hintEnabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/adddescEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/login_box"
+                    android:hint="Type here"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:maxLength="100"
+                    android:textColorHint="@color/maintheme"
+                    tools:ignore="TouchTargetSizeCheck">
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/addnumberLayout"
+                style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:helperText="Number"
+                app:helperTextTextColor="@color/black"
+                app:hintEnabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/addnumberEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/login_box"
+                    android:hint="Type your number"
+                    android:inputType="phone"
+                    android:lines="1"
+                    android:maxLength="10"
+                    android:textColorHint="@color/maintheme"
+                    tools:ignore="TouchTargetSizeCheck">
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/addpicLayout"
+                style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:helperText="Picture"
+                app:endIconMode="custom"
+                app:endIconDrawable="@drawable/image_add_ic"
+                app:endIconTint="@color/maintheme"
+                app:helperTextTextColor="@color/black"
+                app:hintEnabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/addpicEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/login_box"
+                    android:hint="add pet pic here"
+                    android:inputType="none"
+                    android:focusable="false"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:textColorHint="@color/maintheme"
+                    tools:ignore="TouchTargetSizeCheck">
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/addpriceLayout"
+                style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:helperText="Price"
+                app:helperTextTextColor="@color/black"
+                app:hintEnabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/addpriceEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/login_box"
+                    android:hint="Add Price"
+                    android:inputType="numberDecimal"
+                    android:lines="1"
+                    android:maxLength="10"
+                    android:textColorHint="@color/maintheme"
+                    tools:ignore="TouchTargetSizeCheck">
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <Button
+                android:id="@+id/addBtn"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/button_shape"
+                android:text="Add"
+                android:textColor="@color/firstpagecolor"
+                android:textSize="15dp"
+                android:layout_gravity="center"
+                android:textStyle="bold" />
+
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+        <ImageView
+            android:id="@+id/bottom_navigation_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="680dp"
+            android:src="@drawable/navigation_bottom_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            app:layout_constraintTop_toTopOf="@+id/bottom_navigation_add"
+            app:layout_constraintEnd_toEndOf="@+id/bottom_navigation_add"
+            app:layout_constraintStart_toStartOf="@id/bottom_navigation_add"
+            app:layout_constraintBottom_toBottomOf="@id/bottom_navigation_add">
+
+            <ImageView
+                android:id="@+id/home_not_selected_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/home_not_selected"
+                android:layout_marginStart="60dp"/>
+            <ImageView
+                android:id="@+id/add_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/add_icon"
+                android:layout_marginStart="80dp"/>
+            <ImageView
+                android:id="@+id/profile_not_selected_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/profile_not_selectd"
+                android:layout_marginStart="60dp"/>
+
+        </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

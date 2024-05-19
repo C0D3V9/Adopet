@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Adopet</string>
+    <string name="register"><u>Register</u></string>
+    <string name="login"><u>Login</u></string>
+    <string name="item_label">Items</string>
+    <string-array name="gender">
+        <item>Female</item>
+        <item>Male</item>
+    </string-array>
+</resources>
